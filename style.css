@@ -1,0 +1,523 @@
+:root {
+    --primary: #0f1b79;
+    --bg: rgb(26, 16, 69);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--bg);
+    color: rgb(19, 12, 8);
+    min-height: 10500px;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 3%;
+    background-color: #1b094b;
+    border-bottom: 1px solid #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo{
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.navbar .navbar-nav a {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 0.3rem;
+}
+
+.navbar .navbar-nav a:hover{
+    color: #cd6336;
+}
+
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.1rem solid #cd6336;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(1);
+}
+.navbar .navbar-extra a {
+    color: #ffffff;
+    margin: 0 0.3rem;
+}
+
+.navbar .navbar-extra a:hover {
+    color: #cd6336;
+}
+
+#hamburger-menu {
+    display: none;
+}
+/* job analis */
+.analis .baranalis a {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.4%;
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-align: center;
+    border-style: solid;
+    border-width: 0.2px;
+    border-radius: 15px;
+}
+.analis .baranalis a:hover {
+    color: #cd6336;
+}
+.analis .baranalis a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.1rem solid #cd6336;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+.analis .baranalis a:hover::after{
+    transform: scaleX(1);
+}
+/* HCBPOAM */
+.analis .hcbpoam {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7rem ;
+}
+.analis .hcbpoam h2 {
+    color: #ffffff;
+    font-size: 2rem;
+}
+.analis .hcbpoam .pertama {
+    color: #ffffff;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    padding: 0.5rem ;
+    font-size: 1.4rem;
+}
+.analis .hcbpoam .pertama2 {
+    color: #ffffff;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 3%;
+    font-size: 1rem;
+}
+/* HCSSSS */
+.analis .hcsss {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7rem;
+}
+.analis .hcsss h2 {
+    font-size: 2rem;
+}
+.analis .hcsss .kedua {
+    color: #ffffff;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    padding: 0.5rem ;
+    font-size: 1.4rem;
+}
+.analis .hcsss .kedua2{
+    color: #ffffff;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 3%;
+    font-size: 1rem;
+}
+/* HCSSO */
+.analis .hcsso {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7rem;
+}
+.analis .hcsso h2 {
+    font-size: 2rem;
+}
+.analis .hcsso .ketiga {
+    color: #ffffff;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    padding: 0.5rem ;
+    font-size: 1.4rem;
+}
+.analis .hcsso .ketiga2 {
+    color: #ffffff;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 3%;
+    font-size: 1rem;
+}
+/* IRS */
+.analis .irs {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7rem;
+}
+.analis .irs h2 {
+    font-size: 2rem;
+}
+.analis .irs .keempat {
+    color: #ffffff;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    padding: 0.5rem ;
+    font-size: 1.4rem;
+}
+.analis .irs .keempat2  {
+    color: #ffffff;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 3%;
+    font-size: 1rem;
+}
+/* IRO */
+.analis .iro {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7rem;
+}
+.analis .iro h2 {
+    font-size: 2rem;
+}
+.analis .iro .kelima {
+    color: #ffffff;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    padding: 0.5rem ;
+    font-size: 1.4rem;
+}
+.analis .iro .kelima2 {
+    color: #ffffff;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 3%;
+    font-size: 1rem;
+}
+/* SHCSS */
+.analis .shcss {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7rem;
+}
+.analis .shcss h2{
+    font-size: 2rem;
+}
+.analis .shcss .keenam {
+    color: #ffffff;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    padding: 0.5rem ;
+    font-size: 1.4rem;
+}
+.analis .shcss .keenam2 {
+    color: #ffffff;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 3%;
+    font-size: 1rem;
+}
+/* SIR */
+.analis .sir {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7rem;
+}
+.analis .sir h2 {
+    font-size: 2rem;
+}
+.analis .sir .ketujuh {
+    color: #ffffff;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    padding: 0.5rem ;
+    font-size: 1.4rem;
+}
+.analis .sir .ketujuh2 {
+    color: #ffffff;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 3%;
+    font-size: 1rem;
+}
+
+/* hero section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/header-bg.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgb(26, 16, 69) 4%, rgba(45, 34, 34, 0) 20%);
+}
+
+.hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+
+.hero .content h1 {
+    font-size: 5em;
+    line-height: 1;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+}
+
+.hero .content h1 span {
+    color: #cd6336;
+}
+
+.hero .content p {
+    font-size: 1.6rem;
+    color: #ffffff;
+    margin-top: 0.2rem;
+    font-weight: 100;
+    text-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+}
+
+.hero .content .cta {
+    margin-top: 0.5rem;
+    display: inline-block;
+    padding: 0.5rem 0.4rem;
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+/*  HC Profile about section */
+.about, .analis, .rekrut, .data {
+    padding: 10rem 7% 1.4rem;
+}
+
+.about h2, .analis h2, .rekrut h2, .data h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+}
+.rekrut h2, .data h2 {
+    color: #cd6336;
+}
+.analis h2 span {
+    color: #cd6336;
+}
+.about h2 span {
+    color: #cd6336;
+}
+
+.about .row {
+    display: flex;
+}
+
+.about .row .about-img {
+    flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+    width: 100%;
+}
+
+.about .row .content {
+    color: #ffffff;
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+.about .row .content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
+}
+
+.about .row .content p {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+    font-weight: 100;
+    text-align: justify;
+}
+
+/* REKRUTMEN BORDER */
+.rekrut h3 {
+    font-size: 2.3rem;
+    text-align: center;
+    color: #ffffff;
+}
+.rekrut {
+    text-align: center;
+    font-size: 1.8rem;
+    color: antiquewhite;
+}
+/* BIODATA */
+.data .head {
+    text-align: center;
+}
+
+/* media queries */
+
+/* laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+/* tablet */
+@media (max-width: 758px) {
+    html {
+        font-size: 62.5%;
+    }
+    #hamburger-menu {
+        display: inline-block;
+    }
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #1b094b;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+    }
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+    .navbar .navbar-nav a {
+        color: #ffffff;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .navbar .navbar-nav a::after {
+        transform-origin: 0 0;
+    }
+    .navbar .navbar-nav a:hover::after {
+        transform: scaleX(0.5);
+    }
+
+    .about .row {
+        flex-wrap: wrap;
+    }
+
+    .about .row .about-img img {
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .about .row .content {
+        padding: 0;
+    }
+
+    .about .row .content h3 {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+
+    .about .row .content p {
+        font-size: 1.5rem;
+    }
+
+}
+
+   
+
+/* handphone */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+/* BORDER */
+.border1 {
+    width: 800px;
+}
+.data .border2 {
+    width: 1100px;
+}
+.head {
+    text-align: center;
+}
+.kolom1 {
+    width: 150px;
+    text-align: center;
+}
+.kolom6 {
+    width: 160px;
+    text-align: center;
+}
+.kolom5 {
+    width: 160px;
+    text-align: center;
+}
+.kolom3 {
+    width: 130px;
+    text-align: center;
+}
+.kolom4 {
+    width: 150px;
+    text-align: center;
+}
